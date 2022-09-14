@@ -33,6 +33,6 @@ def cart_detail(request):
     for item in cart:
         item['update_quantity_form'] = CartAddProductForm(initial={
             'quantity': item["quantity"],
-            "override" = True,
+            "override": True,
         })
     return render(request, "cart/detail.html", {'cart': cart, "form": coupon_apply_form, "recommended_products": recommended_products})
