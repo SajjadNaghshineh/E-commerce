@@ -30,4 +30,4 @@ def product_detail(request, id, slug):
         "form": cart_product_form,
     }
     
-    return render(request, "shop/product/detail.htm", context)
+    return render(request, "shop/product/detail.html", context)
